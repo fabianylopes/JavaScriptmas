@@ -18,5 +18,6 @@ function panic(str) {
 }
 
 // Test your function
+console.log(panic("Hello"));
 console.log(panic("I'm almost out of coffee"));
 console.log(panic("winter is coming"));
