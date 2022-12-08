@@ -15,7 +15,7 @@
     ]
 */
 
-const data = [
+const products = [
   {
     item: "🍭",
     price: 2.99,
@@ -53,4 +53,4 @@ function getSaleItems(data) {
 
   return shoppingCart.map((s) => ({ item: s.item, price: s.price }));
 }
-console.log(getSaleItems(data));
+console.log(getSaleItems(products));
