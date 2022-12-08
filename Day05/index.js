@@ -49,6 +49,8 @@ const data = [
 ];
 
 function getSaleItems(data) {
-  return data.filter((c) => c.type === "sweet");
+  const shoppingCart = data.filter((c) => c.type === "sweet");
+
+  return shoppingCart.map((s) => ({ item: s.item, price: s.price }));
 }
 console.log(getSaleItems(data));
